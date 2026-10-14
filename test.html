@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="estoque.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <span class="etiqueta">DESENVOLVIMENTO WEB</span>
+            <h1>📦 Sistema de Gestão de Estoque</h1>
+            <p>Atividade prática de Arrays e Objetos em JavaScript</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="resumo">
+            <article class="card-resumo">
+                <span>Categorias</span>
+                <strong id="totalCategorias">0</strong>
+            </article>
+            <article class="card-resumo">
+                <span>Produtos cadastrados</span>
+                <strong id="totalProdutos">0</strong>
+            </article>
+            <article class="card-resumo">
+                <span>Valor em estoque</span>
+                <strong id="valorEstoque">R$ 0,00</strong>
+            </article>
+        </section>
+
+        <section class="painel">
+            <h2>Parte 1 — Declaração e modificação</h2>
+
+            <div class="questao">
+                <h3>Questão 1.1 — Array de categorias</h3>
+                <p>Array declarado com as categorias iniciais.</p>
+                <pre id="q11"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 1.2 — Códigos e fornecedores</h3>
+                <p>Códigos criados com colchetes e fornecedores com new Array().</p>
+                <pre id="q12"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 1.3 — Acesso e alteração</h3>
+                <pre id="q13"></pre>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Parte 2 — Inserção, remoção e pesquisa</h2>
+
+            <div class="questao">
+                <h3>Questão 2.1 — Operações no array</h3>
+                <pre id="q21"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2.2 — Tamanho do array</h3>
+                <pre id="q22"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2.3 — indexOf() e includes()</h3>
+                <pre id="q23"></pre>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Parte 3 — Iteração</h2>
+
+            <div class="questao">
+                <h3>Questão 3.1 — Laço for tradicional</h3>
+                <pre id="q31"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 3.2 — Laço for...of</h3>
+                <pre id="q32"></pre>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Parte 4 — Arrays de objetos e métodos avançados</h2>
+
+            <div class="questao">
+                <h3>Questão 4.1 — Primeiro produto</h3>
+                <pre id="q41"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 4.2 — filter()</h3>
+                <pre id="q42"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 4.3 — reduce()</h3>
+                <pre id="q43"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 4.4 — map()</h3>
+                <pre id="q44"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 4.5 — slice() e sort()</h3>
+                <pre id="q45"></pre>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 4.6 — some() e find()</h3>
+                <pre id="q46"></pre>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Estoque de produtos</h2>
+            <p>Visualização dos produtos cadastrados no sistema.</p>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Estoque</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaProdutos"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Estoque crítico</h2>
+            <p>Produtos com menos de 5 unidades disponíveis.</p>
+            <div id="alertaEstoque" class="alerta"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico — Desenvolvimento Web / Programação para Internet</p>
+    </footer>
+</body>
+</html>
